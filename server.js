@@ -2,7 +2,7 @@ const express = require("express");
 /*
  *Require Routers
  */
-const adminRouter = require("./routers/admins");
+const adminRouter = require("./routers/admin");
 /**
  * error middlewares
  */

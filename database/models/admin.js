@@ -24,7 +24,7 @@ const checkAdminIfExists = (email) => {
   return db
     .query("select * from admins where email = $1", [email])
     .then((response) => {
-      return response.rowCount !== 0;
+      return response.rows;
     });
 };
 

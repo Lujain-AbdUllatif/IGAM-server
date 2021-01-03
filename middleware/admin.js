@@ -1,3 +1,5 @@
+const { parametersError } = require("./utils/functions");
+
 const checkSignUpParams = (req, res, next) => {
   const {
     name,
@@ -17,9 +19,8 @@ const checkSignUpParams = (req, res, next) => {
   ) {
     next();
   }
-  const error = new Error("Passed request body parameters error!");
-  error.status = 409;
-  next(error);
+
+  next(parametersError());
 };
 
 module.exports = { checkSignUpParams };

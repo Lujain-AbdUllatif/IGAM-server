@@ -1,7 +1,5 @@
 const model = require("../database/models/admin");
 
-const adminSignIn = (req, res, next) => {};
-
 const adminSignUp = (req, res, next) => {
   model
     .addAdmin(req.body)
@@ -15,4 +13,4 @@ const adminSignUp = (req, res, next) => {
     });
 };
 
-module.exports = { adminSignIn, adminSignUp };
+module.exports = { adminSignUp };

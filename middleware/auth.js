@@ -11,7 +11,7 @@ const verifyUser = (userRole) => {
         const { id, role } = jwt.verify(access_token, SECRET);
         if (role === userRole) {
           req.body.id = id;
-          next();
+          return next();
         } else {
           const error = new Error(`Not an ${userRole}`);
           error.status = 403;

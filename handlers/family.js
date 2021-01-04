@@ -2,7 +2,7 @@ const model = require("../database/models/family");
 
 const createFamily = (req, res, next) => {
   model
-    .addFamily(newFamily)
+    .addFamily(req.body)
     .then((family) => {
       res.status(201).send(family);
     })
@@ -10,6 +10,7 @@ const createFamily = (req, res, next) => {
 };
 
 const getAllFamily = (req, res, next) => {
+  console.log(req.body);
   model
     .getAllFamily(req.body.village_id)
     .then((families) => {

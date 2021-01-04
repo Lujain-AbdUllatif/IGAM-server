@@ -10,7 +10,8 @@ const addFamily = ({ name, code, phone, members, village_id }) => {
     .then((response) => {
       console.log(response);
       return response.rows[0];
-    });
+    })
+    .catch(console.log);
 };
 
 const getAllFamily = (village_id) => {
@@ -18,6 +19,7 @@ const getAllFamily = (village_id) => {
     .query("select * from families where village_id =$1", [village_id])
     .then((response) => {
       return response.rows;
-    });
+    })
+    .catch(console.log);
 };
 module.exports = { addFamily, getAllFamily };

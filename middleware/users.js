@@ -24,7 +24,7 @@ const checkUserIfExists = (req, res, next) => {
           };
           throw new Error();
         }
-        next();
+        return next();
       });
     })
     .catch((err) => {

@@ -10,6 +10,7 @@ const { checkSignInParams, checkUserIfExists } = require("./middleware/users");
  * Require Routers
  */
 const adminRouter = require("./routers/admin");
+const familyRouter = require("./routers/family");
 
 /*
  * error middlewares
@@ -28,6 +29,7 @@ app.use(express.json());
 
 // using routers
 app.post("/sign-in", checkSignInParams, checkUserIfExists, userSignIn);
+app.use("/family", familyRouter);
 app.use("/admin", adminRouter);
 
 // using error handling middleware

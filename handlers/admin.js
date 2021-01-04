@@ -32,13 +32,19 @@ const addDonation = (req, res, next) => {
 
 const getAgents = (req, res, next) => {
   model
-    .getAgents()
+    .getAgents(req.body)
     .then((allAgents) => {
       res.status(200).send(allAgents);
     })
     .catch(next);
 };
 
+<<<<<<< HEAD
 const addAgent = (req, res, next) => {};
 
 module.exports = { adminSignUp, addPackges, addDonation, getAgents, addAgent };
+=======
+// const addAgent = (req, res, next);
+
+module.exports = { adminSignUp, addPackges, addDonation, getAgents };
+>>>>>>> 88b851d728cf150af71029c26f4fa2235cb8e69b

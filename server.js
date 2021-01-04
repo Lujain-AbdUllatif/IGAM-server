@@ -1,13 +1,13 @@
 const express = require("express");
 
-/**
+/*
  * sign in handlers
  */
 const { userSignIn } = require("./handlers/signin");
 const { checkSignInParams, checkUserIfExists } = require("./middleware/users");
 
 /*
- *Require Routers
+ * Require Routers
  */
 const adminRouter = require("./routers/admin");
 const familyRouter = require("./routers/family");
@@ -26,6 +26,7 @@ app.listen(port, () => console.log(`Server listen on port : ${port}`));
 app.use(express.urlencoded({ extended: false }));
 
 app.use(express.json());
+
 // using routers
 app.post("/sign-in", checkSignInParams, checkUserIfExists, userSignIn);
 app.use("/family", familyRouter);

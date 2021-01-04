@@ -17,7 +17,8 @@ const addAdmin = ({
     .then((response) => {
       console.log(response);
       return response.rows[0];
-    });
+    })
+    .catch(console.log);
 };
 
 const checkAdminIfExists = (email) => {
@@ -25,7 +26,8 @@ const checkAdminIfExists = (email) => {
     .query("select * from admins where email = $1", [email])
     .then((response) => {
       return response.rows;
-    });
+    })
+    .catch(console.log);
 };
 
 const addPackges = ({ id, packages }) => {
@@ -41,7 +43,8 @@ const addPackges = ({ id, packages }) => {
         )
         .then((response) => {
           return response.rows[0];
-        });
+        })
+        .catch(console.log);
     });
 };
 
@@ -58,14 +61,18 @@ const addDonation = ({ id, donation }) => {
         )
         .then((response) => {
           return response.rows[0];
-        });
+        })
+        .catch(console.log);
     });
 };
 
-const getAgents = () => {
-  return db.query("select * from agents").then((response) => {
-    return response.rows;
-  });
+const getAgents = ({ id }) => {
+  return db
+    .query("select * from agents where admin_id = $1", [id])
+    .then((response) => {
+      return response.rows;
+    })
+    .catch(console.log);
 };
 
 module.exports = {

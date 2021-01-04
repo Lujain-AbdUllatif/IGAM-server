@@ -61,4 +61,17 @@ const addDonation = ({ id, donation }) => {
         });
     });
 };
-module.exports = { addAdmin, checkAdminIfExists, addPackges, addDonation };
+
+const getAgents = () => {
+  return db.query("select * from agents").then((response) => {
+    return response.rows;
+  });
+};
+
+module.exports = {
+  addAdmin,
+  checkAdminIfExists,
+  addPackges,
+  addDonation,
+  getAgents,
+};

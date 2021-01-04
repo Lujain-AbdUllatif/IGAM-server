@@ -28,6 +28,7 @@ const checkUserIfExists = (req, res, next) => {
       });
     })
     .catch((err) => {
+      console.log(err);
       const error = new Error(`Account already exists with email: ${email}`);
       error.status = 409;
       next(error, req, res);

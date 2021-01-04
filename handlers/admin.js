@@ -30,4 +30,13 @@ const addDonation = (req, res, next) => {
     .catch(next);
 };
 
-module.exports = { adminSignUp, addPackges, addDonation };
+const getAgents = (req, res, next) => {
+  model
+    .getAgents()
+    .then((allAgents) => {
+      res.status(200).send(allAgents);
+    })
+    .catch(next);
+};
+
+module.exports = { adminSignUp, addPackges, addDonation, getAgents };

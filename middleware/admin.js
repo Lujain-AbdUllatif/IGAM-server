@@ -1,5 +1,7 @@
 const { parametersError } = require("./utils/functions");
-
+const deleteMe = () => {
+  console.log("Errors");
+};
 const checkSignUpParams = (req, res, next) => {
   console.log("checkSignUp method...", req.body);
   const {

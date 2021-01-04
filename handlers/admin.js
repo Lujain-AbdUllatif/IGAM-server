@@ -39,4 +39,6 @@ const getAgents = (req, res, next) => {
     .catch(next);
 };
 
-module.exports = { adminSignUp, addPackges, addDonation, getAgents };
+const addAgent = (req, res, next) => {};
+
+module.exports = { adminSignUp, addPackges, addDonation, getAgents, addAgent };

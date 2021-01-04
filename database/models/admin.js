@@ -75,11 +75,11 @@ const getAgents = ({ id }) => {
     .catch(console.log);
 };
 
-const addAgent = ({ name, email, phone, password, location, admin_id }) => {
+const addAgent = ({ name, email, phone, password, location, id }) => {
   return db
     .query(
       "insert into agents(name, email, phone, password, location, admin_id) values ($1,$2,$3,$4,$5,$6) returning (name), (email), (phone), (password), (location), (admin_id)",
-      [name, email, phone, password, location, admin_id]
+      [name, email, phone, password, location, id]
     )
     .then((response) => {
       return response.rows[0];

@@ -1,6 +1,7 @@
 const { parametersError } = require("./utils/functions");
 
 const checkSignUpParams = (req, res, next) => {
+  console.log("checkSignUp method...", req.body);
   const {
     name,
     email,

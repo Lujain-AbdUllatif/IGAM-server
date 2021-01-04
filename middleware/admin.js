@@ -17,7 +17,7 @@ const checkSignUpParams = (req, res, next) => {
     donation_budget &&
     available_packages
   ) {
-    next();
+    return next();
   }
 
   next(parametersError());

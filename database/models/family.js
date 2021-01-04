@@ -8,7 +8,6 @@ const addFamily = ({ name, code, phone, members, village_id }) => {
       [name, code, phone, members, village_id]
     )
     .then((response) => {
-      console.log(response);
       return response.rows[0];
     })
     .catch(console.log);

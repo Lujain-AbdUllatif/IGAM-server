@@ -28,4 +28,37 @@ const checkAdminIfExists = (email) => {
     });
 };
 
-module.exports = { addAdmin, checkAdminIfExists };
+const addPackges = ({ id, packages }) => {
+  return db
+    .query("select available_packages from admins where id = $1", [id])
+    .then((response) => {
+      let { available_packages } = response.rows[0];
+      available_packages += packages;
+      return db
+        .query(
+          "update admins set available_packages = $1 where id = $2 returning (available_packages)",
+          [available_packages, id]
+        )
+        .then((response) => {
+          return response.rows[0];
+        });
+    });
+};
+
+const addDonation = ({ id, donation }) => {
+  return db
+    .query("select donation_budget from admins where id = $1", [id])
+    .then((response) => {
+      let { donation_budget } = response.rows[0];
+      donation_budget += donation;
+      return db
+        .query(
+          "update admins set donation_budget = $1 where id = $2 returning (donation_budget)",
+          [donation_budget, id]
+        )
+        .then((response) => {
+          return response.rows[0];
+        });
+    });
+};
+module.exports = { addAdmin, checkAdminIfExists, addPackges, addDonation };

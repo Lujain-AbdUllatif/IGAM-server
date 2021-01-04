@@ -13,4 +13,21 @@ const adminSignUp = (req, res, next) => {
     });
 };
 
-module.exports = { adminSignUp };
+const addPackges = (req, res, next) => {
+  model
+    .addPackges(req.body)
+    .then((avialablePackgesObj) => {
+      res.status(200).send(avialablePackgesObj);
+    })
+    .catch(next);
+};
+const addDonation = (req, res, next) => {
+  model
+    .addDonation(req.body)
+    .then((donationBudgetObj) => {
+      res.status(200).send(donationBudgetObj);
+    })
+    .catch(next);
+};
+
+module.exports = { adminSignUp, addPackges, addDonation };

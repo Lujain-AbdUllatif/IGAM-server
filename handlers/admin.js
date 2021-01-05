@@ -49,4 +49,20 @@ const addAgent = (req, res, next) => {
     .catch(next);
 };
 
-module.exports = { adminSignUp, addPackges, addDonation, getAgents, addAgent };
+//Admin: edit-agent
+const updateAgent = (req, res, next) => {
+  model
+    .updateAgent(req.body)
+    .then((updated) => {
+      res.status(200).send(updated);
+    })
+    .catch(next);
+};
+module.exports = {
+  adminSignUp,
+  addPackges,
+  addDonation,
+  getAgents,
+  addAgent,
+  updateAgent,
+};

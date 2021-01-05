@@ -12,7 +12,7 @@ const createFamily = (req, res, next) => {
 const getAllFamily = (req, res, next) => {
   console.log(req.body);
   model
-    .getAllFamily(req.body.village_id)
+    .getAllFamily(req.body)
     .then((families) => {
       res.status(200).send(families);
     })

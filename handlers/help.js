@@ -29,4 +29,28 @@ const getAllAdminFinancialAids = (req, res, next) => {
     .catch(next);
 };
 
-module.exports = { addHelps, getAllAdminPackages, getAllAdminFinancialAids };
+const getAllFamilyPackages = (req, res, next) => {
+  model
+    .getAllFamilyPackages(req.body)
+    .then((response) => {
+      res.status(200).send(response);
+    })
+    .catch(next);
+};
+
+const getAllFamilyFinancialAid = (req, res, next) => {
+  model
+    .getAllFamilyFinancialAid(req.body)
+    .then((response) => {
+      res.status(200).send(response);
+    })
+    .catch(next);
+};
+
+module.exports = {
+  addHelps,
+  getAllAdminPackages,
+  getAllAdminFinancialAids,
+  getAllFamilyPackages,
+  getAllFamilyFinancialAid,
+};

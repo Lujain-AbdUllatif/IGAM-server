@@ -34,4 +34,35 @@ const getAdminAid = (aidType, id) => {
     .catch(console.log);
 };
 
-module.exports = { addHelps, getAllAdminPackages, getAllAdminFinancialAid };
+// package_id, agent_id, agent_name, amount, status
+const getAllFamilyPackages = ({ family_id }) => {
+  return db
+    .query(
+      "select help.id, help.type, help.amount, help.status, help.agent_id, agents.name from help left join agents on help.agent_id = agents.id where help.family_id = $1 and help.type = 'package'",
+      [family_id]
+    )
+    .then((response) => {
+      return response.rows;
+    })
+    .catch(console.log);
+};
+
+const getAllFamilyFinancialAid = ({ family_id }) => {
+  return db
+    .query(
+      "select help.id, help.type, help.amount, help.status, help.agent_id, agents.name from help left join agents on help.agent_id = agents.id where help.family_id = $1 and help.type = 'money'",
+      [family_id]
+    )
+    .then((response) => {
+      return response.rows;
+    })
+    .catch(console.log);
+};
+
+module.exports = {
+  addHelps,
+  getAllAdminPackages,
+  getAllAdminFinancialAid,
+  getAllFamilyPackages,
+  getAllFamilyFinancialAid,
+};

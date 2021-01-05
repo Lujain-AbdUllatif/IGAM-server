@@ -8,9 +8,8 @@ const createVillage = (req, res, next) => {
     .catch(next);
 };
 const getAllVillage = (req, res, next) => {
-  console.log(req.body);
   model
-    .getAllVillage(req.body.admin_id)
+    .getAllVillage(req.body)
     .then((villages) => {
       res.status(200).send(villages);
     })

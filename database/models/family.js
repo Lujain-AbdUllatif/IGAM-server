@@ -1,5 +1,3 @@
-const { response } = require("express");
-const express = require("express");
 const db = require("../connection");
 const addFamily = ({ name, code, phone, members, village_id }) => {
   return db

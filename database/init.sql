@@ -86,16 +86,29 @@ VALUES
 INSERT INTO help (type, amount, status, family_id, agent_id,admin_id )
 VALUES 
 ('package', '1', 'delivered', 1, 1,1),
+('package', '2', 'delivered', 1, 1,1),
+('money', '100', 'delivered', 1, 1,1),
 ('package', '2', 'delivered', 2, 1,1),
+('money', '200', 'delivered', 2, 1,1),
 ('package', '3', 'assigned', 3, 1,1),
+('money', '300', 'assigned', 3, 1,1),
 ('package', '4', 'delivered', 4, 2,1),
+('money', '400', 'delivered', 4, 2,1),
 ('package', '1', 'delivered', 5, 2,1),
+('money', '500', 'delivered', 5, 2,1),
 ('package', '2', 'assigned', 6, 2,1),
+('money', '600', 'assigned', 6, 2,1),
 ('package', '3', 'delivered', 7, 3,1),
+('money', '700', 'delivered', 7, 3,1),
 ('package', '4', 'delivered', 8, 3,1),
+('money', '800', 'delivered', 8, 3,1),
 ('package', '1', 'assigned', 9, 3,1),
+('money', '900', 'assigned', 9, 3,1),
 ('package', '2', 'delivered', 10, 4,1),
+('money', '900', 'delivered', 10, 4,1),
 ('package', '3', 'delivered', 11, 4,1),
-('package', '4', 'assigned', 12, 4,1);
+('money', '1100', 'delivered', 11, 4,1),
+('package', '4', 'assigned', 12, 4,1),
+('money', '1200', 'assigned', 12, 4,1);
 
 COMMIT;

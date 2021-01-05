@@ -1,5 +1,3 @@
-const { response } = require("express");
-const express = require("express");
 const db = require("../connection");
 const addFamily = ({ name, code, phone, members, village_id }) => {
   return db
@@ -14,7 +12,6 @@ const addFamily = ({ name, code, phone, members, village_id }) => {
 };
 
 const getAllFamily = ({ village_id }) => {
-  
   return db
     .query("select * from families where village_id = $1", [village_id])
     .then((response) => {

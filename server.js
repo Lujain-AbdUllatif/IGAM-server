@@ -11,7 +11,11 @@ const { checkSignInParams, checkUserIfExists } = require("./middleware/users");
  */
 const adminRouter = require("./routers/admin");
 const familyRouter = require("./routers/family");
+<<<<<<< HEAD
 const helpRouter = require("./routers/help");
+=======
+const villageRouter = require("./routers/village");
+>>>>>>> b5dcd8177e3c03ab0a4f15e8b57c299040ce59ba
 
 /*
  * error middlewares
@@ -33,6 +37,7 @@ app.post("/sign-in", checkSignInParams, checkUserIfExists, userSignIn);
 app.use("/family", familyRouter);
 app.use("/admin", adminRouter);
 app.use("/help", helpRouter);
+app.use("/village", villageRouter);
 
 // using error handling middleware
 app.use(handleError);

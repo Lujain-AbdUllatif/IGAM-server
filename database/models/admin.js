@@ -85,7 +85,15 @@ const addAgent = ({ name, email, phone, password, location, id }) => {
     })
     .catch(console.log());
 };
-
+////Admin: edit-agent
+const updateAgent = ({ name, email, phone, location, agent_id }) => {
+  return db
+    .query(
+      `update agents set name=$1, email=$2, phone=$3,location=$4 where id=$5 returning (name), (email),(phone),(location)`,
+      [name, email, phone, location, agent_id]
+    )
+    .then((response) => response.rows[0]);
+};
 module.exports = {
   addAdmin,
   checkAdminIfExists,
@@ -93,4 +101,5 @@ module.exports = {
   addDonation,
   getAgents,
   addAgent,
+  updateAgent,
 };

@@ -5,6 +5,7 @@ const {
   addDonation,
   getAgents,
   addAgent,
+  updateAgent,
 } = require("../handlers/admin");
 const { checkUserIfExists } = require("../middleware/users");
 const { checkSignUpParams } = require("../middleware/admin");
@@ -18,5 +19,6 @@ router.post("/add-donation", verifyUser("admin"), addDonation);
 router.get("/agents", verifyUser("admin"), getAgents);
 // adding an agent
 router.post("/agent", verifyUser("admin"), addAgent);
-
+// edit an agent
+router.put("/agent", verifyUser("admin"), updateAgent);
 module.exports = router;

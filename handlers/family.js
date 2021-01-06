@@ -8,6 +8,15 @@ const createFamily = (req, res, next) => {
     })
     .catch(next);
 };
+// Admin: edit-family
+const updateFamily = (req, res, next) => {
+  model
+    .updateFamily(req.body)
+    .then((updated) => {
+      res.status(200).send(updated);
+    })
+    .catch(next);
+};
 
 const getAllFamily = (req, res, next) => {
   console.log(req.body);
@@ -18,4 +27,4 @@ const getAllFamily = (req, res, next) => {
     })
     .catch(next);
 };
-module.exports = { createFamily, getAllFamily };
+module.exports = { createFamily, getAllFamily, updateFamily };

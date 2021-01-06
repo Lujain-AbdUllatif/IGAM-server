@@ -1,5 +1,9 @@
 const express = require("express");
-const { createFamily, getAllFamily } = require("../handlers/family");
+const {
+  createFamily,
+  getAllFamily,
+  updateFamily,
+} = require("../handlers/family");
 const { addFamilyCode } = require("../middleware/family");
 const {
   getAllFamilyPackages,
@@ -17,4 +21,5 @@ router.post("/package", verifyUser("admin"), getAllFamilyPackages);
 // Admin: get all family's financial-aid
 router.post("/financial-aid", verifyUser("admin"), getAllFamilyFinancialAid);
 
+router.put("/", verifyUser("admin"), updateFamily);
 module.exports = router;

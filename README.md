@@ -135,10 +135,11 @@ Response body : should be array likewise
 }  
 <br />
 <br />
+
 5. **Admin: Add Family**  
-Route: http://localhost:4000/family  
+> Route: http://localhost:4000/family  
 Request Method: POST  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: should be a json likewise;  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"Mario marzok",  
@@ -156,10 +157,11 @@ Response body : should be array likewise
 }  
 <br />
 <br />
+
 6. **Admin: Get all families**  
-Route: http://localhost:4000/family  
+> Route: http://localhost:4000/family  
 Request Method: GET  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Response body : should be array likewise  
 [  
   {  
@@ -237,10 +239,11 @@ Response body : should be array likewise
 ]  
 <br />
 <br />
+
 7. **Admin: Add Village**  
-Route: http://localhost:4000/village  
+> Route: http://localhost:4000/village  
 Request Method: POST  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: should be a json likewise;  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":"negev",  
@@ -253,10 +256,11 @@ Response body : should be array likewise
 }  
 <br />
 <br />
+
 8. **Admin: get all villages**  
-Route: http://localhost:4000/village  
+> Route: http://localhost:4000/village  
 Request Method: GET  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Response body : should be array likewise  
 [  
   {  
@@ -268,10 +272,11 @@ Response body : should be array likewise
 ]  
 <br />
 <br />
+
 9. **Assign administrator’s packages**  
-Route: http://localhost:4000/help/packge/assign
+> Route: http://localhost:4000/help/packge/assign
 Request Method: POST
-> access_token should be included in the headers
+access_token should be included in the headers
 Request Body: should be object like,
 {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 3,
@@ -295,10 +300,11 @@ Response Body: should be array like,
 ]
 <br />
 <br />
+
 10. **Get all administrator’s packages**  
-Route: http://localhost:4000/help/packges
+> Route: http://localhost:4000/help/packges
 Request Method: GET 
-> access_token should be included in the headers
+access_token should be included in the headers
 Response body : should be array likewise
 [
   {
@@ -318,10 +324,11 @@ Response body : should be array likewise
 ]
 <br />
 <br />
+
 11. **Assign administrator’s financial aid**  
-Route: http://localhost:4000/help/financial-aid/assign
+> Route: http://localhost:4000/help/financial-aid/assign
 Request Method: POST 
-> access_token should be included in the headers
+access_token should be included in the headers
 Request Body: should be object like,
 {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 300,
@@ -345,10 +352,11 @@ Response Body: should be array like,
 ]
 <br />
 <br />
+
 12. **Get all administrator’s financial aids** 
-Route: http://localhost:4000/help/financial-aids
+> Route: http://localhost:4000/help/financial-aids
 Request Method: GET 
-> access_token should be included in the headers
+access_token should be included in the headers
 Response body : should be array likewise
 [
   {
@@ -382,10 +390,11 @@ Response body : should be array likewise
 ]
 <br />
 <br />
+
 13. **Admin: Add packages**   
-Route: http://localhost:4000/admin/add-packages
+> Route: http://localhost:4000/admin/add-packages
 Request Method: POST
-> access_token should be included in the headers
+access_token should be included in the headers
 Request Body: should be object like,
 {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"packages": 10
@@ -396,10 +405,11 @@ Response Body: should be object like,
 }
 <br />
 <br />
+
 14. **Admin: Add donation**  
-Route: http://localhost:4000/admin/add-donation  
+> Route: http://localhost:4000/admin/add-donation  
 Request Method: POST  
-> access_token should be included in the headers
+access_token should be included in the headers
 Request Body: should be object like,
 {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donation": 10
@@ -410,8 +420,9 @@ Response Body: should be object like,
 }
 <br />
 <br />
+
 15. **Admin: get family’s packages**  
-Route: http://localhost:4000/family/package
+> Route: http://localhost:4000/family/package
 Request Method: POST
 Headers should include access_token
 Request body : should be object like
@@ -431,8 +442,9 @@ Request body : should be object like
 ]
 <br />
 <br />
+
 16. **Admin: get family’s financial-aid**  
-Route: http://localhost:4000/family/financial-aid  
+> Route: http://localhost:4000/family/financial-aid  
 Request Method: POST  
 Headers should include access_token  
 Request body : should be object like  
@@ -452,10 +464,11 @@ Response body : should be object like
 ]  
 <br />
 <br />
+
 17. **Admin: get agent’s packages**   
-Route: http://localhost:4000/agent/packages  
+> Route: http://localhost:4000/agent/packages  
 Request Method: GET  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: should be object like,  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 1  
@@ -489,10 +502,11 @@ Response Body: should be array like,
 ]  
 <br />
 <br />
+
 18. **Admin: get agent’s financial-aid**   
-Route: http://localhost:4000/agent/financial_aids  
+> Route: http://localhost:4000/agent/financial_aids  
 Request Method: GET  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: should be object like,  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 4  
@@ -534,10 +548,11 @@ Response Body: should be array like,
 ]  
 <br />
 <br />
+
 19. **Admin: edit family**  
-Route: http://localhost:4000/family  
+> Route: http://localhost:4000/family  
 Request Method: PUT  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: should be object like,  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_id":1,  
@@ -556,10 +571,11 @@ Response Body: should be array like,
 }  
 <br />
 <br />
+
 20. **Admin: edit agent**  
-Route: http://localhost:4000/admin/agent  
+> Route: http://localhost:4000/admin/agent  
 Request Method: PUT  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: should be object like,  
 {  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id":1,  
@@ -577,10 +593,11 @@ Response Body: should be array like,
 }  
 <br />
 <br />
+
 21. **Agent: get agent’s packages**   
-Route: http://localhost:4000/agent/packages  
+> Route: http://localhost:4000/agent/packages  
 Request Method: GET  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: NONE  
 Response Body: should be array like,  
 [  
@@ -611,10 +628,11 @@ Response Body: should be array like,
 ]  
 <br />
 <br />
+
 22. **Agent: get agent’s financial-aid**  
-Route: http://localhost:4000/agent/financial_aids  
+> Route: http://localhost:4000/agent/financial_aids  
 Request Method: GET  
-> access_token should be included in the headers  
+access_token should be included in the headers  
 Request Body: NONE  
 Response Body: should be array like,  
 [  

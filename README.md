@@ -278,26 +278,26 @@ Response body : should be array likewise
 Request Method: POST
 access_token should be included in the headers
 Request Body: should be object like,
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 3,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"families_id": [1,2,3,4],
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 4
-}
-Response Body: should be array like,
-[
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 22
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 21
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 23
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 24
-  }
-]
+{    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 3,    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"families_id": [1,2,3,4],    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 4    
+}    
+Response Body: should be array like,    
+[    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 22    
+  },    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 21    
+  },    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 23  
+  },  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 24  
+  }  
+]  
 <br />
 <br />
 
@@ -306,22 +306,22 @@ Response Body: should be array like,
 Request Method: GET 
 access_token should be included in the headers
 Response body : should be array likewise
-[
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 16,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_2",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 2
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 15,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_3",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 2
-  }
-]
+[  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 16,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_2",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 2  
+  },  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 15,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_3",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 2  
+  }  
+]  
 <br />
 <br />
 
@@ -330,26 +330,26 @@ Response body : should be array likewise
 Request Method: POST 
 access_token should be included in the headers
 Request Body: should be object like,
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 300,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"families_id": [1,2,3,4],
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 4
-}
-Response Body: should be array like,
-[
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 27
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 25
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 28
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 26
-  }
-]
+{    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 300,    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"families_id": [1,2,3,4],    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 4    
+}    
+Response Body: should be array like,    
+[    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 27    
+  },    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 25    
+  },    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 28    
+  },    
+  {    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 26  
+  }  
+]  
 <br />
 <br />
 
@@ -358,35 +358,35 @@ Response Body: should be array like,
 Request Method: GET 
 access_token should be included in the headers
 Response body : should be array likewise
-[
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 27,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_1",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 28,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_3",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 26,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300
-  },
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 25,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_2",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300
-  }
+[  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 27,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_1",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300  
+  },  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 28,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_3",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300  
+  },  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 26,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300  
+  },  
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_id": 25,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_name": "agent_4",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_name": "family_2",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"help_amount": 300  
+  }  
 ]
 <br />
 <br />
@@ -396,13 +396,13 @@ Response body : should be array likewise
 Request Method: POST
 access_token should be included in the headers
 Request Body: should be object like,
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"packages": 10
-}
-Response Body: should be object like,
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"available_packages": 36
-}
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"packages": 10  
+}  
+Response Body: should be object like,  
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"available_packages": 36  
+}  
 <br />
 <br />
 
@@ -411,13 +411,13 @@ Response Body: should be object like,
 Request Method: POST  
 access_token should be included in the headers
 Request Body: should be object like,
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donation": 10
-}
-Response Body: should be object like,
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donation_budget": 36
-}
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donation": 10  
+}  
+Response Body: should be object like,  
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donation_budget": 36  
+}  
 <br />
 <br />
 
@@ -426,20 +426,20 @@ Response Body: should be object like,
 Request Method: POST
 Headers should include access_token
 Request body : should be object like
-{
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_id" : 6
-}
-*Response body : should be object like
+{  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"family_id" : 6  
+}  
+Response body : should be object like  
 [
-  {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 6,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "package",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 2,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"status": "assigned",
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 2,
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "agent_2"
-  }
-]
+  {  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 6,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"type": "package",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"amount": 2,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"status": "assigned",  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"agent_id": 2,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "agent_2"  
+  }  
+]  
 <br />
 <br />
 

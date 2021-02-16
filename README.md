@@ -41,6 +41,7 @@ Response body : should be object like
 }  
 <br />
 <br />
+
 2. **Admin: Sign Up**  
 Route: http://localhost:4000/admin/sign-up  
 Request Method: POST  
@@ -63,6 +64,7 @@ Response body : should be object like
 }  
 <br />
 <br />
+
 3. **Admin/ Get all agents**  
 Route: http://localhost:4000/admin/agents  
 Request Method: GET     
@@ -108,6 +110,7 @@ Response body : should be array likewise
 ]  
 <br />
 <br />  
+
 4. **Admin: Adding agent**   
 Route: http://localhost:4000/admin/agent  
 Request Method: POST  

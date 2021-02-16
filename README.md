@@ -28,7 +28,7 @@ is a server built to accept requests from the front-end IGAM project, the reques
 *NOTE* that the request/ response body are just to demonstrate.
 
 1. **Sign In**  
-Route: http://localhost:4000/sign-in  
+> Route: http://localhost:4000/sign-in  
 Request Method: POST  
 Request body : should be object like  
 {  
@@ -43,7 +43,7 @@ Response body : should be object like
 <br />
 
 2. **Admin: Sign Up**  
-Route: http://localhost:4000/admin/sign-up  
+> Route: http://localhost:4000/admin/sign-up  
 Request Method: POST  
 Request body : should be object like  
 {  

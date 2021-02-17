@@ -670,7 +670,8 @@ Response Body: should be array like,
   }  
 ]  
 
-## Built by 
+
+## Main Technologies
 - Node.js
 - Express.js
 - PostgreSQL

@@ -670,3 +670,13 @@ Response Body: should be array like,
   }  
 ]  
 
+## Built by 
+- Node.js
+- Express.js
+- PostgreSQL
+
+## Team
+- [Ammar Yousef](https://github.com/Ammaryus)  
+- [Lujain Abdllatif](https://github.com/Lujain-AbdUllatif)  
+- [Shoog Kaabiya](https://github.com/shoogkabiya)  
+- [Myassar Jabalee](https://github.com/myassar1211)
